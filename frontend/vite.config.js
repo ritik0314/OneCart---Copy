@@ -4,8 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss()],css: {
-    transformer: 'postcss' // ✅ fallback (no lightningcss binaries needed)
+  plugins: [react(), tailwindcss()],
+  css: {
+    transformer: 'postcss' // ✅ disables lightningcss
   }
-  
 })
